@@ -34,10 +34,10 @@ Course website for PRML Spring 2023 at Fudan University ([Github Link](https://g
 |04/16 |  |  |  | Assignment1 <font color="red">due</font> |
 |04/17 |Lecture 7: Neural Networks | Online |Exercise 7: Neural Networks| |
 |04/24 |Lecture 8: CNNs | Online  |Exercise 8: CNNs|  Final PJ Proposal|
+|04/29 | |  |Assignment 2: Deep Learning with Image Data| |
 |05/01 | |  |Cancelled for the Labor Day| |
-|05/08 | | H3204 |Assignment 2: Deep Learning with Image Data| |
-|05/15 |Lecture 9: RNNs | Online |Exercise 9: RNNs| |
-|05/22 |Lecture 10: SANs | Online |Exercise 9: SANs| |
+|05/08 |Lecture 9: RNNs | Online |Exercise 9: RNNs| |
+|05/15 |Lecture 10: SANs | Online |Exercise 9: SANs| |
 |05/29 | | H3204 |Assignment 3: Deep Learning with Multimodal Data| |
 
 ## Coursework
