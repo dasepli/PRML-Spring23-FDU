@@ -11,7 +11,7 @@ class Module:
     def forward(self, input):
         raise NotImplementedError
 
-    def backward(self, input):
+    def backward(self, output_grad):
         raise NotImplementedError
 
 

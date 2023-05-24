@@ -4,8 +4,12 @@ Activation functions
 ref: https://github.com/pytorch/pytorch/blob/main/torch/nn/modules/activation.py
 """
 
+import os
+import sys
+sys.path.append(os.getcwd())
+
 import numpy as np
-from .base import Module
+from base import Module
 
 class Sigmoid(Module):
     """Applies the element-wise function:
@@ -28,8 +32,6 @@ class Sigmoid(Module):
         ###########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
-
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         self.output = output
         return output
@@ -48,8 +50,6 @@ class Sigmoid(Module):
         # TODO:                                                                   #
         # Implement the backward method.                                          #
         ###########################################################################
-
-        pass
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return input_grad

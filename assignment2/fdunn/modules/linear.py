@@ -3,9 +3,12 @@ Linear Layer
 
 ref: https://github.com/pytorch/pytorch/blob/main/torch/nn/modules/linear.py
 """
+import os
+import sys
+sys.path.append(os.getcwd())
 
 import numpy as np
-from .base import Module
+from base import Module
 
 class Linear(Module):
     """Applies a linear transformation to the incoming data: :math:`Y = XW^T + b`
@@ -58,7 +61,7 @@ class Linear(Module):
         ###########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
+
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return output
@@ -82,7 +85,6 @@ class Linear(Module):
         ###########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         assert self.grads['W'].shape == self.params['W'].shape
@@ -90,3 +92,20 @@ class Linear(Module):
         assert input_grad.shape == self.input.shape
 
         return input_grad
+
+def unit_test():
+    np.random.seed(2333)
+
+    model = Linear(20,30)
+    input = np.random.randn(4, 2, 8, 20)
+    output = model(input)
+    print (output.shape)
+
+    output_grad = output
+    input_grad = model.backward(output_grad)
+    print (model.grads['W'].shape)
+    print (model.grads['b'].shape)
+    print (input_grad.shape)
+
+if __name__ == '__main__':
+    unit_test()
